@@ -2,13 +2,17 @@
   "name": "youtube-api-vue",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lmsfelipe.github.io/vue-youtube-api/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "gh-pages": "^2.0.1",
     "vue": "^2.5.22"
   },
   "devDependencies": {
